@@ -1,0 +1,70 @@
+export const projects = {
+	ru: [
+		{
+			id: 1,
+			name: "🧩 Todo App",
+			type: "React+LocalStorage+CSS+Vite",
+			link: "https://github.com/skarb-by/My-Todos",
+			desc: "Современное Todo-приложение на React с использованием useCallback и React.memo для оптимизации производительности. Все задачи сохраняются в LocalStorage, а интерфейс выполнен в минималистичном и адаптивном стиле, Fullstack-проект по продаже недвижимости с интерактивным React-фронтендом и Node.js сервером.",
+			text: "Посмотреть на GitHub"
+		},
+		{
+			id: 2,
+			name: "🏡 Forma-Studio",
+			type: "React+React.lazy+Vite+CSS+Node.js",
+			link: "https://github.com/skarb-by/Forma-Studio",
+			desc: "Fullstack-проект по продаже недвижимости с интерактивным React-фронтендом и Node.js сервером.",
+			text: "Посмотреть на GitHub",
+		},
+		{
+			id: 3,
+			name: "🚗 Luxury Cars Slider",
+			type: "React+CSS+Vite",
+			link: "https://github.com/skarb-by/CarsSlider",
+			desc: "Интерактивный React-слайдер с анимацией и данными о люксовых автомобилях. Проект реализован с использованием React, динамического импорта компонентов, асинхронного получения данных и адаптивного дизайна.",
+			text: "Посмотреть на GitHub",
+		},
+		{
+			id: 4,
+			name: "📰 News App",
+			type: "React+CSS+Vite+Axios",
+			link: "https://github.com/skarb-by/news_app",
+			desc: "Современное новостное приложение на React + Vite, которое получает свежие новости с внешнего API и отображает их в удобном и минималистичном интерфейсе.",
+			text: "Посмотреть на GitHub",
+		},
+	],
+	en: [
+		{
+			id: 5,
+			name: "🧩 Todo App",
+			type: "React+LocalStorage+CSS+Vite",
+			link: "https://github.com/skarb-by/My-Todos",
+			desc: "A modern Todo app built with React using useCallback and React.memo for performance optimization. All tasks are saved in LocalStorage and the interface is designed in a minimalistic and responsive style, fullstack real estate project with an interactive React frontend and a Node.js server.",
+			text: "View on GitHub",
+		},
+		{
+			id: 6,
+			name: "🏡 Forma-Studio",
+			type: "React+React.lazy+Vite+CSS+Node.js",
+			link: "https://github.com/skarb-by/Forma-Studio",
+			desc: "A fullstack real estate project with an interactive React frontend and a Node.js server.",
+			text: "View on GitHub",
+		},
+		{
+			id: 7,
+			name: "🚗 Luxury Cars Slider",
+			type: "React+CSS+Vite",
+			link: "https://github.com/skarb-by/CarsSlider",
+			desc: "An interactive React slider with animation and data about luxury cars. The project is implemented using React, dynamic component imports, asynchronous data retrieval, and responsive design.",
+			text: "View on GitHub",
+		},
+		{
+			id: 8,
+			name: "📰 News App",
+			type: "React+CSS+Vite+Axios",
+			link: "https://github.com/skarb-by/news_app",
+			desc: "A modern news app built with React + Vite that fetches fresh news from an external API and displays it in a user-friendly and minimalistic interface.",
+			text: "View on GitHub",
+		},
+	],
+}

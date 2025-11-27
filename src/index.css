@@ -1,0 +1,78 @@
+:root {
+  --bg: #f0f2f5;
+  --text: #222;
+  --card: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body[data-theme='dark'] {
+  --bg: #0d1117;
+  --text: #c9d1d9;
+  --card: #161b22;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  padding: 30px 10px;
+  max-width: 1100px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.6s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tilt-card-content {
+  text-align: justify;
+}
+
+.contact-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top: 40px;
+}
+
+.contact-grid .tilt-card {
+  padding: 15px;
+}
+
+.contact-grid p {
+  font-size: 15px;
+}
+
+.contact-icon {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+  color: var(--text);
+  transition: 0.3s;
+}
+
+.tilt-card:hover .contact-icon {
+  transform: scale(1.2);
+}

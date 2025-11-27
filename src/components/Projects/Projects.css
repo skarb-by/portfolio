@@ -1,0 +1,123 @@
+.projects-section {
+	padding: 100px 0;
+	width: 100%;
+}
+
+.projects-title {
+	text-align: center;
+	font-size: 36px;
+	margin-bottom: 40px;
+	font-weight: 700;
+	color: var(--text-color);
+}
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 25px;
+}
+
+.projects-grid p {
+	margin: 5px;
+
+
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.project-desc {
+
+
+	display: -webkit-box;
+	/* важно */
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
+	/* сколько строк показывать */
+	overflow: hidden;
+	/* важно */
+	text-overflow: ellipsis;
+	/* не всегда нужен, но безопасно держать */
+
+	line-height: 1.4;
+	/* настрой под свой дизайн */
+	max-height: calc(1.4em * 5);
+	/* защита: не даёт элементу вырасти больше чем 3 строки */
+	hyphens: auto;
+	word-break: break-word;
+	text-align: justify;
+}
+
+.project-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* чтобы footer github был внизу */
+	gap: 5px;
+	padding: 5px;
+	text-decoration: none;
+	color: var(--text-color);
+	transition: 0.3s;
+	position: relative;
+
+	/* фиксированная высота */
+	height: 250px;
+	/* можно подкорректировать под дизайн */
+	overflow: hidden;
+}
+
+
+
+.project-name {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.project-type {
+	font-size: 13px;
+	opacity: 0.7;
+}
+
+.project-desc {
+	font-size: 15px;
+	opacity: 0.8;
+	line-height: 1.4;
+	flex-grow: 1;
+	/* чтобы занимал доступное пространство */
+	overflow: hidden;
+	/* обрезаем текст, если слишком длинный */
+}
+
+
+
+
+.project-github {
+	margin-top: 10px;
+	font-size: 14px;
+	opacity: 0.8;
+	transition: 0.3s;
+	display: inline-flex;
+	align-items: center;
+	/* Центрует иконку и текст по вертикали */
+	gap: 6px;
+	justify-content: center;
+
+}
+
+.project-card:hover .project-github {
+	opacity: 1;
+
+
+}
+
+/* Glow + hover animation */
+.project-card:hover {
+	transform: translateY(-5px);
+}
+
+.project-card:hover::after {
+	opacity: 0.6;
+}
+
+.github-icon {
+	font-size: 25px;
+}
