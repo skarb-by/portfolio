@@ -1,16 +1,153 @@
-# React + Vite
+# 🌟 Modern Frontend Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18.0+-61dafb?logo=react&logoColor=white)
 
-Currently, two official plugins are available:
+Добро пожаловать в моё персональное **портфолио разработчика**!
+Этот проект демонстрирует мою экспертизу в **современном фронтенде**, красивых интерфейсах, анимациях и интерактивности.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🎯 О проекте
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Это не просто сайт🎨💻 — это **живое портфолио**, где каждый элемент показывает внимание к деталям и умение создавать привлекательный пользовательский опыт:
 
-## Expanding the ESLint configuration
+- 🎞️ Анимации появления элементов при скролле
+- 🎴 Интерактивные карточки навыков и проектов с эффектом **tilt**
+- 💾 Сохранение состояния в `localStorage`
+- ⚡ Оптимизация через `useCallback` + `React.memo`
+- 🌈 Поддержка **тёмной и светлой темы**
+- 🌐 Многоязычный интерфейс **(RU / EN)**
+- ✨ Плавная навигация по секциям и **scroll-to-top** кнопка
+- 📱 Адаптивность для всех устройств
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 Оптимизация с `useCallback` и `React.memo`
+
+Использование `useCallback` в **Header** и других компонентах позволяет:
+
+- 🔹 Избежать лишних перерендеров
+- 🔹 Снизить нагрузку на интерфейс при большом количестве задач
+- 🔹 Повысить отзывчивость UI
+
+---
+
+## 🛠️ Технологии
+
+| Технология       | Назначение             |
+| ---------------- | ---------------------- |
+| ⚛️ React         | Основной фреймворк     |
+| 🗂️ LocalStorage  | Хранение данных        |
+| 🎨 Framer Motion | Анимации               |
+| 🛡️ DOMPurify     | безопасный рендер HTML |
+| 💅 CSS           | Стилизация интерфейса  |
+| 🧱 Vite          | Быстрая сборка проекта |
+| 🎴 React Icons   | Иконки для UI          |
+
+---
+
+## 📁 Структура проекта
+
+```
+src/
+📂components/    # UI-компоненты (Header, Footer, Skills, Projects, TiltCard, ScrollTop)
+📂data/          # Статические данные (проекты, навыки, контакты, переводы)
+📂hooks/         # Кастомные React хуки (useTheme, useLanguage, useSafeUrl)
+📜App.jsx        # Основной компонент приложения
+📜index.css      # Глобальные стили и CSS переменные
+
+```
+
+---
+
+## ✨ UX/UI особенности
+
+- Карточки навыков и проектов с hover-эффектами и subtle glow
+- Анимированные секции при скролле
+- Плавная кнопка "Наверх"
+- Мгновенное переключение языков и тем без перезагрузки страницы
+
+---
+
+## 💡 Цель проекта
+
+Показать умение создавать чистый, быстрый и современный веб-интерфейс, который выглядит профессионально и демонстрирует навыки в:
+
+- React & современный стек
+- Анимации и микровзаимодействия
+- UX/UI дизайн
+- Многоязычность и адаптивность
+
+---
+
+## 📸 Скриншот интерфейса
+
+<img
+  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/MyTodos/1.jpg"
+  alt=""
+  title=""
+  style="display: inline-block; margin: 0 auto; ">
+
+ <hr/>
+ <img
+  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/MyTodos/2.jpg"
+  alt=""
+  title=""
+  style="display: inline-block; margin: 0 auto; ">
+
+ <hr/>
+ <img
+  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/MyTodos/3.jpg"
+  alt=""
+  title=""
+  style="display: inline-block; margin: 0 auto; ">
+
+ <hr/>
+ <img
+  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/MyTodos/4.jpg"
+  alt=""
+  title=""
+  style="display: inline-block; margin: 0 auto; ">
+
+ <hr/>
+ <img
+  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/MyTodos/5.jpg"
+  alt=""
+  title=""
+  style="display: inline-block; margin: 0 auto; ">
+
+ <hr/>
+ <img
+  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/MyTodos/6.jpg"
+  alt=""
+  title=""
+  style="display: inline-block; margin: 0 auto; ">
+
+ <hr/>
+  <img
+  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/MyTodos/7.jpg"
+  alt=""
+  title=""
+  style="display: inline-block; margin: 0 auto; ">
+
+ <hr/>
+
+---
+
+## ⚙️ Установка и запуск
+
+```bash
+# Клонируем репозиторий
+git clone https://github.com/skarb-by/portfolio
+
+# Устанавливаем зависимости
+npm install
+
+# Запуск в режиме разработки
+npm run dev
+```
+
+---
+
+👨‍💻 **Автор:** [Skarb](https://github.com/skarb-by)
+📅 _2025_
