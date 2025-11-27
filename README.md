@@ -83,49 +83,35 @@ src/
 ## 📸 Скриншот интерфейса
 
 <img
-  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/MyTodos/1.jpg"
+  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/portfolio/1.jpg"
   alt=""
   title=""
   style="display: inline-block; margin: 0 auto; ">
 
  <hr/>
  <img
-  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/MyTodos/2.jpg"
+  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/portfolio/2.jpg"
   alt=""
   title=""
   style="display: inline-block; margin: 0 auto; ">
 
  <hr/>
  <img
-  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/MyTodos/3.jpg"
+  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/portfolio/3.jpg"
   alt=""
   title=""
   style="display: inline-block; margin: 0 auto; ">
 
  <hr/>
  <img
-  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/MyTodos/4.jpg"
+  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/portfolio/4.jpg"
   alt=""
   title=""
   style="display: inline-block; margin: 0 auto; ">
 
  <hr/>
  <img
-  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/MyTodos/5.jpg"
-  alt=""
-  title=""
-  style="display: inline-block; margin: 0 auto; ">
-
- <hr/>
- <img
-  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/MyTodos/6.jpg"
-  alt=""
-  title=""
-  style="display: inline-block; margin: 0 auto; ">
-
- <hr/>
-  <img
-  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/MyTodos/7.jpg"
+  src="https://raw.githubusercontent.com/skarb-by/images/refs/heads/main/help/portfolio/5.jpg"
   alt=""
   title=""
   style="display: inline-block; margin: 0 auto; ">

@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useCallback, memo } from 'react'
+import { useState, useMemo, useCallback, memo } from 'react'
 import './Header.css'
 import { Link } from 'react-scroll'
 import { motion } from 'framer-motion'
