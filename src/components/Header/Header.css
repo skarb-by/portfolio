@@ -1,19 +1,13 @@
-/* ===========================
-   HEADER — DESKTOP
-=========================== */
-
 .header {
 	position: relative;
 	overflow: hidden;
 	padding: 15px 20px;
 	color: var(--text);
-
 	margin: 15px auto 0;
 	max-width: 1090px;
 	border-radius: 18px;
 }
 
-/* BG эффект */
 .header-bg {
 	position: absolute;
 	inset: 0;
@@ -22,7 +16,6 @@
 	filter: blur(80px);
 }
 
-/* Контейнер */
 .header-inner {
 	display: flex;
 	justify-content: space-between;
@@ -31,7 +24,6 @@
 	z-index: 5;
 }
 
-/* ЛОГО */
 .logo {
 	display: flex;
 	flex-direction: column;
@@ -52,7 +44,6 @@
 	color: var(--text);
 }
 
-/* NAV DESKTOP */
 .nav {
 	display: flex;
 	gap: 30px;
@@ -73,13 +64,11 @@
 	transform: scale(1.1);
 }
 
-/* active — имитация нажатия */
 .nav .nav-button:active {
 	transform: scale(0.97) translateY(0);
 	background: rgba(255, 255, 255, 0.22);
 }
 
-/* Контролы */
 .controls {
 	display: flex;
 	align-items: center;
@@ -110,10 +99,6 @@
 .theme-btn svg {
 	font-size: 30px;
 }
-
-/* ===========================
-   BURGER
-=========================== */
 
 .burger {
 	display: none;
@@ -146,7 +131,6 @@
 	bottom: 0;
 }
 
-/* Анимация иконки */
 .burger.active span:nth-child(1) {
 	transform: rotate(45deg);
 	top: 8px;
@@ -161,28 +145,20 @@
 	bottom: 8px;
 }
 
-/* ===========================
-   FULLSCREEN MOBILE MENU
-=========================== */
 @media (max-width: 780px) {
-
 	.burger {
 		display: block;
-
 	}
 
-	/* затемнение на весь экран */
 	.nav {
 		position: fixed;
 		inset: 0;
 		background: rgba(0, 0, 0, 0.55);
 		backdrop-filter: blur(8px);
-
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
 		opacity: 0;
 		pointer-events: none;
 		transition: opacity 0.35s ease;
@@ -214,7 +190,6 @@
 	.nav.open .nav-button:hover {
 		opacity: 0.8;
 		transform: translateY(-5px) scale(1.5);
-
 	}
 
 	.nav.open .nav-button:nth-child(1) {
@@ -256,7 +231,5 @@
 		width: 30px;
 		height: 30px;
 		font-size: 13px;
-
 	}
-
 }

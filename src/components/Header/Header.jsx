@@ -68,18 +68,15 @@ const Header = memo(({ theme, toggleTheme, lang, switchLang, t }) => {
 					))}
 				</nav>
 
-				{/* Контролы */}
 				<div className='controls'>
 					<button className='theme-btn' onClick={toggleTheme}>
 						{theme === 'light' ? <AiOutlineMoon /> : <AiOutlineSun />}
 					</button>
-
 					<button className='lang-btn' onClick={switchLang}>
 						{lang.toUpperCase()}
 					</button>
 				</div>
 
-				{/* Бургер */}
 				<div
 					className={`burger ${open ? 'active' : ''}`}
 					onClick={() => setOpen(!open)}
@@ -90,7 +87,6 @@ const Header = memo(({ theme, toggleTheme, lang, switchLang, t }) => {
 				</div>
 			</div>
 
-			{/* Контент */}
 			<div className='header-content'>
 				<motion.h1
 					className='apple-text'
@@ -100,7 +96,6 @@ const Header = memo(({ theme, toggleTheme, lang, switchLang, t }) => {
 				>
 					{t.title}
 				</motion.h1>
-
 				<motion.p
 					className='subtitle'
 					initial={{ y: 20, opacity: 0 }}

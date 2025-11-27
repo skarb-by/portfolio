@@ -3,7 +3,6 @@ import TiltCard from '../TiltCard/TiltCard'
 import { contactsData } from '../../data/contactsData'
 import { useSafeUrl } from '../../hooks/useSafeUrl'
 
-// --- отдельный компонент карточки контакта ---
 const ContactCard = memo(({ Icon, title, value, link }) => {
 	const { isSafeUrl } = useSafeUrl()
 	const safeLink = isSafeUrl(link) ? link : '#'
@@ -19,7 +18,6 @@ const ContactCard = memo(({ Icon, title, value, link }) => {
 	)
 })
 
-// --- основной компонент Contacts ---
 export default function Contacts() {
 	const contactCards = useMemo(() => {
 		return contactsData.map(({ id, icon, title, value, link }) => (
@@ -31,7 +29,7 @@ export default function Contacts() {
 				link={link}
 			/>
 		))
-	}, []) // contactsData статичен
+	}, [])
 
 	return <div className='contact-grid'>{contactCards}</div>
 }
