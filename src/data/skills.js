@@ -1,4 +1,3 @@
-// src/data/skills.js
 import {
 	SiReact,
 	SiJavascript,

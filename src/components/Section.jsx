@@ -2,11 +2,8 @@ import React, { useEffect, useRef, useMemo, useCallback } from 'react'
 
 function Section({ id, children, title }) {
 	const ref = useRef()
-
-	// мемоизированные настройки
 	const options = useMemo(() => ({ threshold: 0.3 }), [])
 
-	// мемоизированный callback
 	const handleIntersect = useCallback(entries => {
 		if (entries[0].isIntersecting) {
 			ref.current?.classList.add('visible')

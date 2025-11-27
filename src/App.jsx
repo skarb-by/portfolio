@@ -24,7 +24,6 @@ const App = () => {
 				switchLang={switchLang}
 				t={t}
 			/>
-
 			<Section id='about' title={t.about}>
 				<TiltCard>
 					<div
@@ -33,19 +32,15 @@ const App = () => {
 					/>
 				</TiltCard>
 			</Section>
-
 			<Section id='skills' title={t.skills}>
 				<Skills lang={lang} />
 			</Section>
-
 			<Section id='projects' title={t.projects}>
 				<Projects lang={lang} />
 			</Section>
-
 			<Section id='contact' title={t.contact}>
 				<Contacts lang={lang} />
 			</Section>
-
 			<ScrollTop />
 			<Footer />
 		</>

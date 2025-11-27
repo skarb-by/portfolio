@@ -6,11 +6,9 @@ import { memo, useMemo } from 'react'
 import { useSafeUrl } from '../../hooks/useSafeUrl'
 import './Projects.css'
 
-// --- карточка проекта ---
 const ProjectCard = memo(({ p }) => {
 	const { isSafeUrl } = useSafeUrl()
 	const safeLink = isSafeUrl(p.link) ? p.link : '#'
-
 	return (
 		<TiltCard>
 			<a
@@ -22,7 +20,6 @@ const ProjectCard = memo(({ p }) => {
 				<p className='project-name'>{p.name}</p>
 				<p className='project-type'>{p.type}</p>
 				<p className='project-desc'>{p.desc}</p>
-
 				<span className='project-github'>
 					<FaGithub className='github-icon' />
 					<span>{p.text}</span>
@@ -32,7 +29,6 @@ const ProjectCard = memo(({ p }) => {
 	)
 })
 
-// --- основной компонент Projects ---
 const Projects = ({ lang }) => {
 	const containerVariants = {
 		hidden: { opacity: 0 },
@@ -61,7 +57,7 @@ const Projects = ({ lang }) => {
 	return (
 		<div className='projects-wrapper'>
 			<motion.div
-				key={lang} // сброс анимации при смене языка
+				key={lang}
 				className='projects-grid'
 				initial='hidden'
 				animate='show'

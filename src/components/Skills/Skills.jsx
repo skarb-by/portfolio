@@ -5,13 +5,11 @@ import { skills } from '../../data/skills'
 import { useSafeUrl } from '../../hooks/useSafeUrl'
 import './Skills.css'
 
-// --- отдельная карточка навыка ---
 const SkillCard = memo(({ skill }) => {
 	const { isSafeUrl } = useSafeUrl()
 	const Icon = skill.icon
 	const iconElement = useMemo(() => <Icon className='skill-icon' />, [Icon])
 	const safeLink = isSafeUrl(skill.link) ? skill.link : '#'
-
 	return (
 		<motion.div
 			variants={{ hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0 } }}
@@ -37,13 +35,11 @@ const SkillCard = memo(({ skill }) => {
 	)
 })
 
-// --- основной компонент Skills ---
 const Skills = ({ lang }) => {
 	const skillList = useMemo(() => skills, [])
-
 	return (
 		<motion.div
-			key={lang} // ререндер при смене языка
+			key={lang}
 			className='skills-grid'
 			initial='hidden'
 			whileInView='show'

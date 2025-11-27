@@ -4,7 +4,6 @@ import './TextAnimate.css'
 function TextAnimate({ words }) {
 	const [index, setIndex] = useState(0)
 
-	// Если words изменится — сбросить индекс
 	useEffect(() => {
 		setIndex(0)
 	}, [words])
@@ -15,9 +14,8 @@ function TextAnimate({ words }) {
 		}, 2000)
 
 		return () => clearInterval(interval)
-	}, [words.length]) // если массив слов изменится — пересоздаём интервал
+	}, [words.length])
 
-	// Мемоизация выводимого слова (чисто косметика)
 	const currentWord = useMemo(() => words[index], [index, words])
 
 	return <span className='magic-word'>{currentWord}</span>

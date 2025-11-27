@@ -81,23 +81,16 @@ h2 {
   .contact-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
-
 }
 
 @media (max-width: 450px) {
   h2 {
     font-size: 25px;
-
   }
-
-
 }
 
 @media (max-width: 460px) {
   .contact-grid {
     grid-template-columns: repeat(1, 1fr);
   }
-
-
 }
