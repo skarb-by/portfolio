@@ -121,3 +121,23 @@
 .github-icon {
 	font-size: 25px;
 }
+
+
+@media (max-width: 560px) {
+	.projects-grid {
+		grid-template-columns: repeat(1, 1fr);
+
+	}
+
+
+}
+
+
+@media (max-width: 300px) {
+	.projects-grid .tilt-card {
+		padding: 0;
+
+	}
+
+
+}

@@ -233,3 +233,30 @@
 		transition-delay: 0.45s;
 	}
 }
+
+@media (max-width: 460px) {
+	.apple-text {
+		font-size: 20px;
+	}
+
+	.subtitle {
+		font-size: 15px;
+	}
+
+	.logo-text {
+		font-size: 20px;
+	}
+
+	.header svg {
+		font-size: 80px;
+	}
+
+	.theme-btn,
+	.lang-btn {
+		width: 30px;
+		height: 30px;
+		font-size: 13px;
+
+	}
+
+}

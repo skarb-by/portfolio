@@ -56,14 +56,70 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
 	gap: 25px;
+	justify-content: center;
 }
 
 .skills-grid .tilt-card {
-	position: relative;
+	height: 150px;
+	/* фиксированная высота всех карточек */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
 }
 
 .skills-grid .tilt-card:hover {
 	transform: translateY(-6px) rotateX(2deg) rotateY(2deg);
 	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 0 20px var(--accent-color);
+}
+
+
+@media (max-width: 1000px) {
+	.skills-grid {
+		grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+		gap: 10px;
+	}
+
+}
+
+
+@media (max-width: 870px) {
+	.skills-grid {
+		grid-template-columns: repeat(4, 1fr);
+
+	}
+
+	.skills-grid .tilt-card {
+		padding: 0;
+	}
+
+	.tilt-inner {
+		font-size: 20px;
+	}
+
+
+}
+
+@media (max-width: 870px) {
+	.skills-grid {
+		grid-template-columns: repeat(3, 1fr);
+
+	}
+
+
+	.tilt-inner {
+		font-size: 15px;
+	}
+
+
+}
+
+@media (max-width: 450px) {
+	.skills-grid {
+		grid-template-columns: repeat(2, 1fr);
+
+	}
+
+
 }
